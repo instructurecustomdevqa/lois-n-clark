@@ -1,0 +1,4 @@
+<% @res.each do |r| %>
+<h1><%= r %>
+<%= pie_chart Report.get_pass_fail_rate(Report.get_report_by_name(r)) %>
+<% end %>
